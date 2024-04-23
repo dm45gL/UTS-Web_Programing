@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimas Galih Laksono</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+
+        <div class="nav-left">
+            <span>Dimas Galih Laksono</span>
+          </div>
+          
+          <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#">Sosmed <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+                <li class="dropdown">
+                    <a href="#">Fakultas<i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Informatika</a></li>
+                    </ul>
+            <li><a href="#">Profil</a></li>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        var menuBtn = document.querySelector(".menu-btn");
+        var navRight = document.querySelector(".nav-right");
+        menuBtn.addEventListener("click", function() {
+            navRight.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
